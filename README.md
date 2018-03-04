@@ -8,7 +8,7 @@ Imagine [React Native](https://github.com/facebook/react-native), [Next.js](http
 - top routes components (screens) enriched with static method onFocus (similar to getInitialProps) 
 
 ## Simple demo
-![Initial demo image](https://imgnextnative-jbkcebaslu.now.sh/initial.gif)
+![Initial demo image](/readme_demo.gif)
 
 ## Installation
 1. Clone this repo: ```git clone ```
