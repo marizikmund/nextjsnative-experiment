@@ -3,7 +3,7 @@
 Imagine [React Native](https://github.com/facebook/react-native), [Next.js](https://github.com/zeit/next.js/) and [React Navigation](https://github.com/react-navigation/react-navigation) together. This is an experimental project, combining features of these great tools.
 
 ## Features
-- automatically generated routes from a directory ```/pages``` like with Next.js
+- automatically generated routes from the directory ```/pages``` like with Next.js
 - navigating between routes with custom Router with similar API to the Router from Next.js
 - top routes components (screens) enriched with static method onFocus (similar to getInitialProps) 
 
@@ -16,9 +16,10 @@ Imagine [React Native](https://github.com/facebook/react-native), [Next.js](http
 1. Run the app in the development mode: ```npm run dev```
 
 ## Start using it
-Quick way: run ```npm run dev``` - this will start the app in Expo
+Quick way: run ```npm run dev``` - this will start the watcher and the app in Expo concurrently.
+
 With more options:
-1. Run ```npm run watcher``` to start watching route changes and automatically rebuilding on any change
+1. Run ```npm run watcher``` to start watching route changes and automatically rebuilding on any change (currently only in the ```/pages``` folder)
 1. Run (in another terminal window) any command from Create React Native app for your development: 
     - ```npm start``` for running the app in Expo
     - ```npm run ios``` for launching the app in an iPhone simulator
