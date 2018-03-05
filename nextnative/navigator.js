@@ -8,15 +8,12 @@ const routesConfig = routeConfigs.config_pages
   ? routeConfigs.config_pages.default
   : {};
 
-  console.log('routesConfig', routesConfig);
-
 const ONLY_TAB_NAVIGATOR = false;
 
-let stacks = {}; 
+let stacks = {};
 fillStacksInAllFolders();
 
 const topRoutes = buildTopRoutes(routes);
-console.log("topRoutes", topRoutes, routesConfig);
 
 const AppNavigator =
   routesConfig === undefined ||
@@ -99,19 +96,14 @@ function buildTopRoutes(routes) {
 
   for (var i in routes) {
     if (routes.hasOwnProperty(i)) {
-      // console.log("jdu ", i);
       if (!i.includes("/")) {
-        // console.log("1");
         obj[i] = routes[i];
       } else {
-        // console.log("2");
         obj[i.split("/")[0]] = {
           screen: stacks[i.split("/")[0]],
           screenName: `${i.split("/")[0]}`
         };
       }
-    } else {
-      // console.log("nepovedlo", routes[i]);
     }
   }
   return obj;
@@ -158,14 +150,13 @@ function getRoutesInFolder(routes, address) {
           }
         } else {
           const routeNameWithAddress = address + "/" + newRouteName;
-          console.log("else", routeNameWithAddress);
-          if (newRouteName){
-          obj[routeNameWithAddress] = routes[i];}
+          if (newRouteName) {
+            obj[routeNameWithAddress] = routes[i];
+          }
         }
       }
     }
   }
-  console.log("subroutes ", address, ": ", obj);
   return obj;
 }
 

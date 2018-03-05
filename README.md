@@ -11,19 +11,19 @@ Imagine [React Native](https://github.com/facebook/react-native), [Next.js](http
 ![Initial demo image](/readme_demo.gif)
 
 ## Installation
-1. Clone this repo: ```git clone ```
+1. Clone this repo: ```git clone https://github.com/marizikmund/nextjsnative-experiment```
 1. Install dependencies: ```npm install```
-1. Run the app in the development mode: ```npm run dev```
 
 ## Start using it
-Quick way: run ```npm run dev``` - this will start the watcher and the app in Expo concurrently.
+1. Quick way: 
+    - Run ```npm run dev``` - this will start the watcher and the app in Expo concurrently.
 
-With more options:
-1. Run ```npm run watcher``` to start watching route changes and automatically rebuilding on any change (currently only in the ```/pages``` folder)
-1. Run (in another terminal window) any command from Create React Native app for your development: 
-    - ```npm start``` for running the app in Expo
-    - ```npm run ios``` for launching the app in an iPhone simulator
-    - ```npm run android``` for launching the app in an Android simulator 
+1. With more options:
+    - Run ```npm run watcher``` to start watching route changes and automatically rebuilding on any change (currently only in the ```/pages``` folder).
+    - Run in another terminal window any command from Create React Native app for your development: 
+      - ```npm start``` for running the app in Expo
+      - ```npm run ios``` for launching the app in an iPhone simulator
+      - ```npm run android``` for launching the app in an Android simulator 
 
 ## What to try out
 - Explore directory ```/pages```, which works like at Next.js framework - every file is a screen, works also with subfolders. There are some screens for demonstration already prepared.
